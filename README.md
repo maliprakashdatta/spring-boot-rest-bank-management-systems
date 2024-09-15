@@ -52,11 +52,11 @@ curl --location --request GET 'http://localhost:8081/bank-management/card' \
 
 ### POST Request:
 ```shell
-1)com.swsa.domain.Card@6e64b8bf
+1)com.swsa.domain.Card@742813c8
 2)curl --location 'http://localhost:8081/bank-management/card' \
 --header 'Content-Type: application/json' \
 --data '{
-    "cardId": "0",
+    "cardId": 0,
     "cardNo": "1",
     "accountNo": "123",
     "accountHolderName": "Prakash",
