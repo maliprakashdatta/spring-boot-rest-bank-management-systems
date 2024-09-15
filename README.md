@@ -139,7 +139,7 @@ curl --location --request GET 'http://localhost:8081/bank-management/account' \
 
 ### account Screen Output:
 
-<image src="https://github.com/user-attachments/assets/8a20d0c1-9438-4cf7-94be-a1cc23b5f55f" width="750" height="350">
+<image src="https://github.com/user-attachments/assets/31003ad0-bb77-4a82-bb17-ea3cb0011885" width="750" height="350">
 
 
 ### account deposit form
