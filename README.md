@@ -171,3 +171,35 @@ curl --location 'http://localhost:8081/bank-management/deposit' \
 <image src="https://github.com/user-attachments/assets/1577ab8b-57cc-46f5-85b5-2dce68e511f3" width="750" height="350">
 
 
+
+### account withdraw form
+### account withdraw POST Request:
+```shell
+curl --location 'http://localhost:8081/bank-management/withdraw' \
+--header 'Content-Type: application/json' \
+--data '{
+    "accountNumber":1,
+    "accountHolderName":"nirav",
+     "balance":"2000",
+     "customer":1
+}'
+```
+### account withdraw GET Request:
+```shell
+curl --location --request GET 'http://localhost:8081/bank-management/withdraw' \
+--header 'Content-Type: application/json' \
+--data '{
+    "accountNumber":"1",
+    "accountHolderName":"nirav",
+     "balance":"2000",
+     "customer":1
+}'
+```
+### account withdraw Screen Output:
+
+<image src="https://github.com/user-attachments/assets/b8ea201d-fb6d-4310-b693-a58b4a409490" width="750" height="350">
+
+
+
+
+
