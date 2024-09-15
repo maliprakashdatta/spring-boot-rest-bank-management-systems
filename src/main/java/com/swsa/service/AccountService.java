@@ -4,6 +4,7 @@ import com.swsa.repository.AccountRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import java.util.List;
 
@@ -41,13 +42,13 @@ public class AccountService {
         return repo.update(account);
     }
 
-            // Deposit Method
-        public String deposit(String accountNumber, double amount) {
-            Account account = (Account) repo.findById(accountNumber)
-                    .orElseThrow(() -> new IllegalArgumentException("Account not found."));
-            account.deposit(amount);
-            return repo.store(account); // Save updated account
-        }
+    // Deposit Method
+    public String deposit(String accountNumber, double amount) {
+        Account account = (Account) repo.findById(accountNumber)
+                .orElseThrow(() -> new IllegalArgumentException("Account not found."));
+        account.deposit(amount);
+        return repo.store(account); // Save updated account
+    }
 
     // Withdraw Method
     public String withdraw(String accountNumber, double amount) {
@@ -56,6 +57,7 @@ public class AccountService {
         account.withdraw(amount);
         return repo.store(account); // Save updated account
     }
+
 
     public String updateAccount(int accountNumber, double amount) {
         return null;
