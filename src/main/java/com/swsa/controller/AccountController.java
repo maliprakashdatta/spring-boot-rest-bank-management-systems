@@ -36,19 +36,39 @@ import java.util.List;
 
             return accountService.updateAccount(accountNumber, account);
         }
+        //=========================================================
+        //-------------------------Deposit -------------------------
+        //=========================================================
+        @GetMapping("/deposit")
+        public List<Account> retrieveDeposit() {
+            return accountService.retrieveAccounts();
+        }
+        @PostMapping("/deposit")
+        public String addDeposit(@RequestBody Account account) {
+            return accountService.storeAccount(account);
+        }
 
         // Deposit Endpoint
         @PostMapping("/deposit/{accountNumber}")
         public String deposit(@PathVariable int  accountNumber, @RequestBody double amount)
         {
-            return accountService.deposit(String.valueOf(accountNumber), amount);
+            return String.valueOf(accountService.deposit(String.valueOf(accountNumber), amount));
         }
-
-
+        //=========================================================
+        //-------------------------Withdraw  -------------------------
+        //==========================================================
+        @GetMapping("/withdraw")
+        public List<Account> retrieveWithdraw() {
+            return accountService.retrieveAccounts();
+        }
+        @PostMapping("/withdraw")
+        public String addWithdraw(@RequestBody Account account) {
+            return accountService.storeAccount(account);
+        }
         // Withdraw Endpoint
         @PostMapping("/withdraw/{accountNumber}")
         public String withdraw(@PathVariable String accountNumber, @RequestBody double amount) {
-            return accountService.withdraw(accountNumber, amount);
+            return String.valueOf(accountService.withdraw(accountNumber, amount));
         }
 
     }
