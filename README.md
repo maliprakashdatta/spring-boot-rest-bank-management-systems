@@ -52,7 +52,7 @@ curl --location 'http://localhost:8081/bank-management/card' \
 curl --location --request GET 'http://localhost:8081/bank-management/card' \
 --header 'Content-Type: application/json' \
 --data '{
-    "cardId": "0",
+    "cardId": 0,
     "cardNo": "1",
     "accountNo": "123",
     "accountHolderName": "Prakash",
