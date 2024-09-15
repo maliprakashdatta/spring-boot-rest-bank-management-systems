@@ -159,10 +159,10 @@ curl --location --request GET 'http://localhost:8081/bank-management/deposit' \
 curl --location 'http://localhost:8081/bank-management/deposit' \
 --header 'Content-Type: application/json' \
 --data '{
-    "accountNumber":"2",
-    "accountHolderName":"pramod",
-     "balance":"500000",
-     "customer":"1"
+   "accountNumber":1,
+    "accountHolderName":"Nirav",
+     "balance":"6000",
+     "customer":1
 }'
 ```
 
