@@ -5,6 +5,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Repository;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 @Repository
 public class AccountRepository implements AccountEntryRepository<Account>
@@ -51,9 +52,11 @@ public class AccountRepository implements AccountEntryRepository<Account>
         return this.accountList.get(Integer.parseInt(account.getAccountNumber())).toString();
     }
 
-//    public Optional<Object> findById(String accountNumber) {
-//        return null;
-//    }
+    @Override
+    public Optional<Object> findById(String accountNumber) {
+        return Optional.empty();
+    }
+
 
 }
 
