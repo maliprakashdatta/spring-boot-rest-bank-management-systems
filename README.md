@@ -105,12 +105,15 @@ curl --location 'http://localhost:8081/bank-management/customer' \
 curl --location --request GET 'http://localhost:8081/bank-management/customer' \
 --header 'Content-Type: application/json' \
 --data-raw ' {
-    "customerId":"1",
+    "customerId":"0",
    "name":"Prakash Mali",
     "mobileNo":"1234567891",
      "address":"Jath",
     "emailId":"maliprakash@gmail.com",
   "aadhaarNo":"12233234"
+   
+   }
+'
    
    }
 '
