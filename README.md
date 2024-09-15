@@ -119,10 +119,10 @@ curl --location --request GET 'http://localhost:8081/bank-management/customer' \
 curl --location 'http://localhost:8081/bank-management/account' \
 --header 'Content-Type: application/json' \
 --data '{
-   "accountNumber":"5050",
+   "accountNumber":1,
     "accountHolderName":"Nirav",
      "balance":"3000",
-     "customer":"1"
+     "customer":1
 }'
 ```
 ### account GET Request:
