@@ -168,6 +168,6 @@ curl --location 'http://localhost:8081/bank-management/deposit' \
 
 ### account deposit Screen Output:
 
-<image src="https://github.com/user-attachments/assets/9ab7a8a1-11b4-4506-927b-94630694b4d4" width="750" height="350">
+<image src="https://github.com/user-attachments/assets/1577ab8b-57cc-46f5-85b5-2dce68e511f3" width="750" height="350">
 
 
