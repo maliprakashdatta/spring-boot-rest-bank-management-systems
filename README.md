@@ -89,10 +89,13 @@ curl --location 'http://localhost:8081/bank-management/customer' \
 --data-raw ' {
     "customerId":"1",
    "name":"Prakash Mali",
-    "mobileNo":"8830535628",
+    "mobileNo":"1234567891",
      "address":"Jath",
-    "emailId":"maliprakash092@gmail.com",
+    "emailId":"maliprakash@gmail.com",
   "aadhaarNo":"12233234"
+   
+   }
+'
    
    }
 '
