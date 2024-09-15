@@ -116,7 +116,7 @@ curl --location --request GET 'http://localhost:8081/bank-management/customer' \
 ### account form
 ### account POST Request:
 ```shell
-curl --location 'http://localhost:8081/bank-management/account' \
+curl --location 'http://localhost:8081/bank-management/deposit' \
 --header 'Content-Type: application/json' \
 --data '{
    "accountNumber":1,
