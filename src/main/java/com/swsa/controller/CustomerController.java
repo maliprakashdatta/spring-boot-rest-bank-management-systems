@@ -19,7 +19,7 @@ public class CustomerController {
         return customerService.retrieveCustomers();
     }
 
-    @GetMapping("/custome/{ customerId}")
+    @GetMapping("/customer/{ customerId}")
     public String retrieveCustomersForcustomerId(@PathVariable int customerId) {
         return customerService.search(customerId);
     }
