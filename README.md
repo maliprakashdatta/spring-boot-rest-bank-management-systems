@@ -121,7 +121,7 @@ curl --location --request GET 'http://localhost:8081/bank-management/customer' \
 ```
 ### customer Screen Output:
 
-<image src="https://github.com/user-attachments/assets/d3f75e87-9aa1-4a02-b84a-2c89d2051d21" width="750" height="350">
+<image src="https://github.com/user-attachments/assets/21004d36-8a97-496a-9a24-156ca6104fee" width="750" height="350">
 
 <hr>
 
