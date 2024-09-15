@@ -67,7 +67,7 @@ curl --location --request GET 'http://localhost:8081/bank-management/card' \
 ```
  
 ### Card Screen Output:
-<image src="https://github.com/user-attachments/assets/617577ed-11a6-46eb-9a1e-9cd9ca9cdb0a" width="750" height="350">
+<image src="https://github.com/user-attachments/assets/bf46790a-d227-4098-a33d-b92204ba2c28" width="750" height="350">
     
 ### customer form
 ### customer POST Request:
