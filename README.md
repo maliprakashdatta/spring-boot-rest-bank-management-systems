@@ -33,10 +33,10 @@ Add Few entries first to have smooth experience
 curl --location 'http://localhost:8081/card-management/card' "{\"cardId\" : 1, \"cardNo\" : \"101\", \"accountNo\" : 1001, \"accountHolderName\" : \"Prakash Mali\" \"cvv\" : \"1\"  \"cardType\" : \"debit\" }"
 ```
 ```shell
-curl --location --request GET 'http://localhost:8081/bank-management/card' \
+curl --location 'http://localhost:8081/bank-management/card' \
 --header 'Content-Type: application/json' \
 --data '{
-    "cardId": "0",
+    "cardId": 0,
     "cardNo": "1",
     "accountNo": "123",
     "accountHolderName": "Prakash",
