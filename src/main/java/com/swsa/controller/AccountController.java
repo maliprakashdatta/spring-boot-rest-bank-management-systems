@@ -52,7 +52,7 @@ import java.util.List;
         @PostMapping("/deposit/{accountNumber}")
         public String deposit(@PathVariable int  accountNumber, @RequestBody double amount)
         {
-            return String.valueOf(accountService.deposit(String.valueOf(accountNumber), amount));
+            return accountService.deposit(String.valueOf(accountNumber), amount);
         }
         //=========================================================
         //-------------------------Withdraw  -------------------------
@@ -62,13 +62,13 @@ import java.util.List;
             return accountService.retrieveAccounts();
         }
         @PostMapping("/withdraw")
-        public String addWithdraw(@RequestBody Account account) {
+        public String addWithdraw(final @RequestBody Account account) {
             return accountService.storeAccount(account);
         }
         // Withdraw Endpoint
         @PostMapping("/withdraw/{accountNumber}")
         public String withdraw(@PathVariable String accountNumber, @RequestBody double amount) {
-            return String.valueOf(accountService.withdraw(accountNumber, amount));
+            return accountService.withdraw(accountNumber, amount);
         }
 
     }
